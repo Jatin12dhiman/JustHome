@@ -1,23 +1,25 @@
 // components/HowItWorks.jsx
-
 import React from 'react';
-import { FaHome, FaUsers, FaKey } from 'react-icons/fa';
+import Image from 'next/image';
 
 const steps = [
   {
-    icon: <FaHome size={30} className="text-[#E7C873]" />,
+    icon: '/images/prf1.png',
     title: 'Find Real Estate',
-    description: 'Sumo petentium ut per, at his wisiim utinam adipiscing. Est ei graeco',
+    description:
+      'Sumo petentium ut per, at his wisiim utinam adipiscing. Est ei graeco',
   },
   {
-    icon: <FaUsers size={30} className="text-[#E7C873]" />,
+    icon: '/images/prf2.png',
     title: 'Meet Relator',
-    description: 'Sumo petentium ut per, at his wisiim utinam adipiscing. Est ei graeco',
+    description:
+      'Sumo petentium ut per, at his wisiim utinam adipiscing. Est ei graeco',
   },
   {
-    icon: <FaKey size={30} className="text-[#E7C873]" />,
+    icon: '/images/prf3.png',
     title: 'Take The Keys',
-    description: 'Sumo petentium ut per, at his wisiim utinam adipiscing. Est ei graeco',
+    description:
+      'Sumo petentium ut per, at his wisiim utinam adipiscing. Est ei graeco',
   },
 ];
 
@@ -32,15 +34,27 @@ const HowItWorks = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
 
+        {/* Steps Grid */}
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {steps.map((step, index) => (
             <div key={index} className="flex flex-col items-center p-4">
+              {/* Icon */}
               <div className="w-20 h-20 bg-[#F0E6D3] rounded-full flex items-center justify-center">
-                {step.icon}
+                <Image
+                  src={step.icon}
+                  alt={step.title}
+                  width={40}
+                  height={40}
+                  className="object-contain"
+                />
               </div>
+
+              {/* Title */}
               <h3 className="mt-6 text-xl font-semibold text-gray-900">
                 {step.title}
               </h3>
+
+              {/* Description */}
               <p className="mt-2 text-sm text-gray-500 max-w-xs">
                 {step.description}
               </p>
