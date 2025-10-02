@@ -23,7 +23,7 @@ export default function Navbar() {
         alt="JustHome Logo" 
         width={148} 
         height={41} 
-        className="rounded top-[40.73px] left-[260px]" // agar circle ya styling chahiye
+        className="" // agar circle ya styling chahiye
       />
     </div>
 

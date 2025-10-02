@@ -8,37 +8,39 @@ const WhyUs = () => {
     <div className="relative py-16 bg-white overflow-hidden">
       <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
         {/* Left Side: Images and Floating Card */}
-        <div className="relative h-[500px] md:h-[600px] flex items-center justify-center">
+        <div className="relative h-[500px] md:h-[600px] flex items-center justify-center ">
           {/* Main large image (half circle) */}
-          <div className="absolute left-1/2 -translate-x-1/2 bottom-0 w-[170px] h-[190px] sm:w-[230px] sm:h-[230px] lg:w-[300px] lg:h-[300px] bg-gray-200 rounded-t-full rounded-md overflow-hidden shadow-xl z-10">
+          <div className="absolute left-1/2 -translate-x-1/2 bottom-0 w-[170px] h-[190px] sm:w-[230px] sm:h-[230px] lg:w-[300px] lg:h-[300px] bg-gray-200 rounded-t-full rounded-md overflow-hidden shadow-xl z-10 left-[65%]">
             <Image
               src="/images/w1.png"
               alt="Modern house"
               fill
-              priority
-              className="object-cover object-center"
+              
+              className=" object-center"
             />
           </div>
 
           {/* Top left image (family) */}
-          <div className="absolute top-0 left-0 w-[180px] h-[220px] sm:w-[220px] sm:h-[300px] rounded-2xl overflow-hidden shadow-lg z-20">
+          <div className="absolute top-14 left-5 w-[200px] h-[250px] sm:w-[230px] sm:h-[290px] rounded-5xl z-10">
             <Image
-              src="/images/w2.png"
+              src="/images/w2.png" // This is the image you want to adjust
               alt="Happy family"
               fill
-              className="object-cover object-center"
+              className=""
             />
           </div>
 
+
           {/* Floating properties card with inlined SVG */}
-           <div className="absolute left-[30%] bottom-16 z-30 w-[180px] h-[180px]">
-            <Image
-              src="/images/w3.png"
-              alt="Floating Property Card"
-              fill
-              className="object-contain"
-            />
-          </div>
+          <div className="absolute z-10 left-4 bottom-8 w-[100px] h-[100px] sm:w-[130px] sm:h-[130px] md:left-[7%] md:bottom-16 md:w-[160px] md:h-[160px] lg:w-[180px] lg:h-[180px]">
+          <Image
+            src="/images/w3.png"
+            alt="Floating Property Card"
+            fill
+            className="object-contain"
+          />
+        </div>
+
         </div>
 
         {/* Right Side: Text Content */}
