@@ -86,22 +86,22 @@ const SiteFooter = () => {
           </div>
 
           {/* Contact */}
-          <div className="col-span-2 md:col-span-2 flex flex-col md:flex-row md:justify-between gap-8">
+          
         {/* Contact Info */}
-        <div>
-            <h4 className="font-bold mb-3">Contact Us</h4>
-            <p>{navData.contact.email}</p>
+        <div className="col-span-1 md:col-span-1 ">
+            <h4 className="font-bold ">Contact Us</h4>
+            <p className="break-words">{navData.contact.email}</p>
             <p>{navData.contact.phone}</p>
         </div>
 
         {/* Address */}
-        <div className="mt-4 md:mt-0">
+        <div className=" col-span-1 md:col-span-1 ">
             <h4 className="font-bold mb-3">Our Address</h4>
             {navData.contact.address.split("\n").map((line, i) => (
             <p key={i}>{line}</p>
             ))}
         </div>
-            </div>
+           
 
 
           {/* App Links */}
