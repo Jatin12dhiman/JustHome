@@ -98,6 +98,13 @@ const Hero = () => {
                 className="h-full w-full object-contain object-center"
               />
             </div>
+            <div className="absolute bottom-[-40] right-4 sm:bottom-[-60] sm:right-6 md:bottom-[-80px] md:right-[-30px] z-10 w-[150px] sm:w-[220px] md:w-[300px] rounded-2xl overflow-hidden ">
+              <img
+                src="/images/stry.png"
+                alt="Overlay"
+                className="w-full h-auto block"
+              />
+            </div>
           </div>
         </div>
 
