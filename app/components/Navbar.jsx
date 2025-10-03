@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,12 +20,10 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
           {/* Brand Logo */}
           <div className="flex items-center gap-2">
-            <Image
+            <img
               src="/images/logo-green.png"
               alt="JustHome Logo"
-              width={148}
-              height={41}
-              priority
+              className="w-[148px] h-[41px] object-contain"
             />
           </div>
 
