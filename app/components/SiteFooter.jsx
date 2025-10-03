@@ -25,6 +25,7 @@ const SiteFooter = () => {
   return (
     <footer className="bg-white pt-10 text-gray-900 border-t border-gray-100 font-sans">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      
         {/* Top section: Logo + Socials */}
         <div className="flex justify-between items-center pb-8 border-b border-gray-100">
           {/* Logo */}
@@ -58,14 +59,12 @@ const SiteFooter = () => {
               />
               <button className="ml-2 px-4 py-2 bg-[#2A524A] text-white rounded-full hover:bg-gray-700 transition flex items-center">
                 Send <span className="ml-2"> → </span>
-                </button>
-
+              </button>
             </div>
             <p className="text-sm text-gray-500">Subscribe to our newsletter for weekly updates.</p>
           </div>
 
           {/* Discover */}
-          
           <div className="col-span-1 md:col-span-1">
             <h4 className="font-bold mb-3">Discover</h4>
             <div className="flex flex-col space-y-1">
@@ -85,65 +84,49 @@ const SiteFooter = () => {
             </div>
           </div>
 
-          {/* Contact */}
-          
-        {/* Contact Info */}
-        <div className="col-span-1 md:col-span-1 ">
+          {/* Contact Info */}
+          <div className="col-span-1 md:col-span-1 ">
             <h4 className="font-bold ">Contact Us</h4>
             <p className="break-words">{navData.contact.email}</p>
             <p>{navData.contact.phone}</p>
-        </div>
+          </div>
 
-        {/* Address */}
-        <div className=" col-span-1 md:col-span-1 ">
+          {/* Address */}
+          <div className=" col-span-1 md:col-span-1 ">
             <h4 className="font-bold mb-3">Our Address</h4>
             {navData.contact.address.split("\n").map((line, i) => (
-            <p key={i}>{line}</p>
+              <p key={i}>{line}</p>
             ))}
-        </div>
-           
-
+          </div>
 
           {/* App Links */}
           <div className="flex flex-col space-y-2 col-span-2">
-  {/* Apple Store */}
-  <a
-    href="#"
-    className="flex items-center bg-[#2A524A] rounded-xl px-4 py-3 hover:opacity-90"
-  >
-    {/* Icon */}
-    <img src="/images/ap.png" alt="Apple Store" className="h-8 w-8" />
-    
-    {/* Divider */}
-    <span className="mx-3 w-px h-6 bg-white"></span>
-    
-    {/* Text */}
-    <div className="flex flex-col">
-      <span className="text-xs text-white">Download on the</span>
-      <span className="text-sm font-semibold text-white">Apple Store</span>
-    </div>
-  </a>
+            {/* Apple Store */}
+            <a
+              href="#"
+              className="flex items-center bg-[#2A524A] rounded-xl px-4 py-3 hover:opacity-90"
+            >
+              <img src="/images/ap.png" alt="Apple Store" className="h-8 w-8" />
+              <span className="mx-3 w-px h-6 bg-white"></span>
+              <div className="flex flex-col">
+                <span className="text-xs text-white">Download on the</span>
+                <span className="text-sm font-semibold text-white">Apple Store</span>
+              </div>
+            </a>
 
-  {/* Google Play */}
-  <a
-    href="#"
-    className="flex items-center bg-[#2A524A] rounded-xl px-4 py-3 hover:opacity-90"
-  >
-    {/* Icon */}
-    <img src="/images/gp.png" alt="Google Play" className="h-8 w-8" />
-    
-    {/* Divider */}
-    <span className="mx-3 w-px h-6 bg-white"></span>
-    
-    {/* Text */}
-    <div className="flex flex-col">
-      <span className="text-xs text-white">Get it on</span>
-      <span className="text-sm font-semibold text-white">Google Play</span>
-    </div>
-  </a>
-</div>
-
-
+            {/* Google Play */}
+            <a
+              href="#"
+              className="flex items-center bg-[#2A524A] rounded-xl px-4 py-3 hover:opacity-90"
+            >
+              <img src="/images/gp.png" alt="Google Play" className="h-8 w-8" />
+              <span className="mx-3 w-px h-6 bg-white"></span>
+              <div className="flex flex-col">
+                <span className="text-xs text-white">Get it on</span>
+                <span className="text-sm font-semibold text-white">Google Play</span>
+              </div>
+            </a>
+          </div>
         </div>
 
         {/* Bottom */}

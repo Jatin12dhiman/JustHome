@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 const Hero = () => {
   return (
@@ -16,8 +15,7 @@ const Hero = () => {
           </h1>
 
           {/* Search Box */}
-          <div className="relative mt-12 rounded-2xl bg-white shadow-lg px-4 w-full py-4 sm:w-[95%] md:w-[650px] lg:w-[750px] xl:w-[850px] 
-    mx-auto z-10">
+          <div className="relative mt-12 rounded-2xl bg-white shadow-lg px-4 w-full py-4 sm:w-[95%] md:w-[650px] lg:w-[750px] xl:w-[850px] mx-auto z-10">
             <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr_1fr_auto] gap-4 md:items-center ">
               {/* Keyword */}
               <div className="relative">
@@ -76,35 +74,32 @@ const Hero = () => {
           {/* Popular Searches */}
           <div className="mt-12 flex items-center flex-wrap gap-2 text-sm">
             <span className="text-gray-600 font-semibold text-lg ">Popular Search </span>
-            <button className="bg-white text-[#1F4B43]  px-3 py-1 rounded-full hover:bg-gray-300 transition-colors border border-gray-200">
+            <button className="bg-white text-[#1F4B43] px-3 py-1 rounded-full hover:bg-gray-300 transition-colors border border-gray-200">
               Modern Villa
             </button>
-            <button className="bg-white text-[#1F4B43]  px-3 py-1 rounded-full hover:bg-gray-300 transition-colors border border-gray-200">
+            <button className="bg-white text-[#1F4B43] px-3 py-1 rounded-full hover:bg-gray-300 transition-colors border border-gray-200">
               Studio Apartment
             </button>
-            <button className="bg-white text-[#1F4B43]  px-3 py-1 rounded-full hover:bg-gray-300 transition-colors border  border-gray-200">
+            <button className="bg-white text-[#1F4B43] px-3 py-1 rounded-full hover:bg-gray-300 transition-colors border border-gray-200">
               Town House
             </button>
           </div>
         </div>
 
-       {/* Right Side: Single Image */}
-<div className="relative order-1 md:order-2 w-full">
-  {/* Outer card: white with rounded corners so corners stay visible */}
-  <div className="relative w-full   h-[300px] sm:h-[380px] md:h-[500px] lg:h-[600px] xl:h-[651px] 
-      mx-auto  max-w-[700px] lg:max-w-[800px] xl:max-w-[900px]">
-    {/* Inner clip: image is clipped inside, leaving white rounded border/corners visible */}
-    <div className="relative h-full w-full overflow-hidden rounded-[22px]">
-      <Image
-        src="/images/slider.png"
-        alt="Featured property"
-        fill
-        priority
-        className="object-contain object-center "
-      />
-    </div>
-  </div>
-</div>
+        {/* Right Side: Single Image */}
+        <div className="relative order-1 md:order-2 w-full">
+          {/* Outer card */}
+          <div className="relative w-full h-[300px] sm:h-[380px] md:h-[500px] lg:h-[600px] xl:h-[651px] mx-auto max-w-[700px] lg:max-w-[800px] xl:max-w-[900px]">
+            {/* Inner clip */}
+            <div className="relative h-full w-full overflow-hidden rounded-[22px]">
+              <img
+                src="/images/slider.png"   // ✅ normal <img />
+                alt="Featured property"
+                className="h-full w-full object-contain object-center"
+              />
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>

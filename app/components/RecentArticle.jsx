@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 // Mock data
 const articles = [
@@ -36,7 +35,6 @@ const logos = [
   { name: "dropcam", url: "/images/l5.png" },
   { name: "logitech", url: "/images/l6.png" },
   { name: "Spotify", url: "/images/l1.png" },
-
 ];
 
 const RecentArticles = () => {
@@ -54,11 +52,9 @@ const RecentArticles = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {articles.map((article, i) => (
             <div key={i} className="rounded-lg overflow-hidden shadow bg-white">
-              <Image
+              <img
                 src={article.imageUrl}
                 alt={article.title}
-                width={400}
-                height={250}
                 className="w-full h-auto object-cover"
               />
               <div className="p-4">
@@ -71,27 +67,24 @@ const RecentArticles = () => {
           ))}
         </div>
 
-        {/* Logos */}
-       {/* Company Trust Bar */}
-<div className="text-center mb-12">
-  <h3 className="text-lg font-semibold text-gray-700 mb-12">
-    Thousands of world’s leading companies trust Space
-  </h3>
+        {/* Logos / Company Trust Bar */}
+        <div className="text-center mb-12">
+          <h3 className="text-lg font-semibold text-gray-700 mb-12">
+            Thousands of world’s leading companies trust Space
+          </h3>
 
-  {/* Responsive Logo Grid */}
-  <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-6 gap-6 items-center justify-items-center opacity-80">
-    {logos.map((logo, i) => (
-      <Image
-        key={i}
-        src={logo.url}
-        alt={logo.name}
-        width={120}
-        height={40}
-        className="object-contain"
-      />
-    ))}
-  </div>
-</div>
+          {/* Responsive Logo Grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-6 gap-6 items-center justify-items-center opacity-80">
+            {logos.map((logo, i) => (
+              <img
+                key={i}
+                src={logo.url}
+                alt={logo.name}
+                className="object-contain w-[120px] h-[40px]"
+              />
+            ))}
+          </div>
+        </div>
 
       </div>
     </section>

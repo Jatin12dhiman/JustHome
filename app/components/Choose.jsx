@@ -1,6 +1,5 @@
 // components/Choose.jsx
 import React from 'react';
-import Image from 'next/image';
 
 const Choose = () => {
   return (
@@ -51,19 +50,15 @@ const Choose = () => {
           </div>
 
           {/* RIGHT IMAGE SECTION */}
-         
-<div className="relative w-full flex justify-center">
-  <div className="relative w-full sm:w-[80%] lg:w-[80%] min-h-[480px] md:min-h-[590px] overflow-hidden rounded-3xl shadow-2xl">
-    <Image
-      src="/images/w-4.png"
-      alt="Modern luxury house"
-      fill
-      className="object-fill rounded-3xl"
-      priority
-    />
-  </div>
-</div>
-
+          <div className="relative w-full flex justify-center">
+            <div className="relative w-full sm:w-[80%] lg:w-[80%] min-h-[480px] md:min-h-[590px] overflow-hidden rounded-3xl shadow-2xl">
+              <img
+                src="/images/w-4.png"
+                alt="Modern luxury house"
+                className="object-fill rounded-3xl w-full h-full"
+              />
+            </div>
+          </div>
 
         </div>
       </div>

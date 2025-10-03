@@ -9,7 +9,7 @@ import FeaturedCategories from "./components/FeaturedCategories";
 import Choose from "./components/Choose";
 import TestimonialSlider from "./components/TestimonialSlider";
 import RecentArticle from "./components/RecentArticle";
-import CTASection from "./components/CtaAection";
+import CTASection from "./components/CtaSection";
 import SiteFooter from "./components/SiteFooter";
 
 export default function Home() {

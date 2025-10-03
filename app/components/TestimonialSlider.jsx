@@ -1,5 +1,4 @@
 // components/TestimonialSlider.jsx
-import Image from "next/image";
 
 const testimonials = [
   {
@@ -26,12 +25,10 @@ export default function TestimonialSlider() {
               {/* LEFT IMAGE */}
               <div className="relative w-full max-w-[300px] h-[350px] md:w-[350px] md:h-[450px] flex-shrink-0">
                 <div className="w-full h-full rounded-3xl overflow-hidden shadow-2xl">
-                  <Image
+                  <img
                     src={t.imageUrl}
                     alt={`Testimonial from ${t.name}`}
-                    fill
-                    className="object-cover object-center rounded-3xl"
-                    priority
+                    className="w-full h-full object-cover object-center rounded-3xl"
                   />
                 </div>
 

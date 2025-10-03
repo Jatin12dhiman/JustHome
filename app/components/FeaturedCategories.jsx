@@ -28,7 +28,7 @@ const CategoryCard = ({ title, properties, icon }) => (
 // Main component
 const FeaturedCategories = () => {
   return (
-    <div className="p-8 md:p-16 min-h-screen bg-[#2A524A] font-sans">
+    <div className="p-8 md:p-16 bg-[#2A524A] font-sans">
       {/* Header */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-12 max-w-7xl mx-auto">
         <div>
