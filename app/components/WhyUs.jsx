@@ -1,7 +1,6 @@
 // components/WhyUsSection.jsx
 
 import React from 'react';
-import Image from 'next/image';
 
 const WhyUs = () => {
   return (
@@ -11,36 +10,30 @@ const WhyUs = () => {
         <div className="relative h-[500px] md:h-[600px] flex items-center justify-center ">
           {/* Main large image (half circle) */}
           <div className="absolute left-1/2 -translate-x-1/2 bottom-0 w-[170px] h-[190px] sm:w-[230px] sm:h-[230px] lg:w-[300px] lg:h-[300px] bg-gray-200 rounded-t-full rounded-md overflow-hidden shadow-xl z-10 left-[65%]">
-            <Image
+            <img
               src="/images/w1.png"
               alt="Modern house"
-              fill
-              
-              className=" object-center"
+              className="w-full h-full object-center"
             />
           </div>
 
           {/* Top left image (family) */}
           <div className="absolute top-14 left-5 w-[200px] h-[250px] sm:w-[230px] sm:h-[290px] rounded-5xl z-10">
-            <Image
-              src="/images/w2.png" // This is the image you want to adjust
+            <img
+              src="/images/w2.png"
               alt="Happy family"
-              fill
-              className=""
+              className="w-full h-full object-cover"
             />
           </div>
 
-
-          {/* Floating properties card with inlined SVG */}
+          {/* Floating properties card */}
           <div className="absolute z-10 left-4 bottom-8 w-[100px] h-[100px] sm:w-[130px] sm:h-[130px] md:left-[7%] md:bottom-16 md:w-[160px] md:h-[160px] lg:w-[180px] lg:h-[180px]">
-          <Image
-            src="/images/w3.png"
-            alt="Floating Property Card"
-            fill
-            className="object-contain"
-          />
-        </div>
-
+            <img
+              src="/images/w3.png"
+              alt="Floating Property Card"
+              className="w-full h-full object-contain"
+            />
+          </div>
         </div>
 
         {/* Right Side: Text Content */}
